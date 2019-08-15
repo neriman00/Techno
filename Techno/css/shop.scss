@@ -5,9 +5,14 @@ body{
 #Shop{
     margin: 50px 0;
 }
-h1  {
-    font-family: 'Quicksand', sans-serif;
+.hr{
+    h1{
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-family: 'Quicksand', sans-serif;
+    }
 }
+
 .ShopCategory{
     background-color: #3e3d3d;
     border: 10px solid #3e3d3d;
@@ -15,10 +20,11 @@ h1  {
     button{
     font-family: 'Quicksand', sans-serif;
    box-shadow: none;
-    border: none;
+    outline: none;
 
     }
 }
+
 .accordion {
     background-color: #3e3d3d;
     color: white;
@@ -34,7 +40,7 @@ h1  {
   }
   
   .active, .accordion:hover {
-    background-color: #585858ab; 
+    background-color: #3e3d3d; 
   }
   
   .panel {
@@ -45,6 +51,12 @@ h1  {
     overflow: hidden;
     a{
         color: white;
+    }
+    p{
+        border-left:3.5px solid #e7c14e;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-left: 10px;
     }
   }
 .shopImg{
