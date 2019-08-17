@@ -157,16 +157,13 @@ $(document).ready(function(){
     })
 })
 
+
+
+
+
 $(".two-menu").click(function(){
     $(".menu-vertical").toggleClass("open");
 });
-
-
-
-$(".menu-a").click(function(){
-    $(this).addClass("active-menu").siblings().removeClass("active-menu");
-})
-
 
 $(document).ready(mySlider);
 
@@ -273,21 +270,11 @@ function mySlider() {
   
 };
 
-$(window).on("load",function(){
-    $(".loadingAnima").hide()
-})
 
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+$('#nested').foldable({
+    animation: {
+        enter    : 'foldable-anim--slide-in',
+        leave    : 'foldable-anim--slide-out',
+        duration : 300
     }
-  });
-}
+})
