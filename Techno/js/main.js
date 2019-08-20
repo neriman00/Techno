@@ -157,10 +157,6 @@ $(document).ready(function(){
     })
 })
 
-
-
-
-
 $(".two-menu").click(function(){
     $(".menu-vertical").toggleClass("open");
 });
